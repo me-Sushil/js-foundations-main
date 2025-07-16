@@ -23,11 +23,13 @@ const setPropsOnArr =(arrayObject)=>{
 const setPropsOnFunc =(functionObject)=>{
     functionObject.year = '20??';
     functionObject.divideByTwo=(number)=>{
-        return num /2;
+        return number/2;
     }
 }
 
 
 const shallowCopy = (arr1, arr2)=>{
+    if(Array.isArray(arr1)) return [...arr1, ...arr2];
+    return {...arr1, ...arr2};
 
 }
