@@ -1,0 +1,22 @@
+{
+  "name": "foundations-checkpoint-final-r",
+  "version": "1.0.0",
+  "description": "### Getting Started:",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/foundations-checkpoint-final-r.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/foundations-checkpoint-final-r/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/foundations-checkpoint-final-r#readme",
+  "devDependencies": {
+    "testem": "^2.14.0"
+  }
+}

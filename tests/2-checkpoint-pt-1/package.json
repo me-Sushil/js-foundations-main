@@ -1,0 +1,28 @@
+{
+  "name": "foundations-checkpoint-pt-1",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem",
+    "grade": "xvfb-run testem ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/foundations-checkpoint-pt-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/foundations-checkpoint-pt-1/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/foundations-checkpoint-pt-1#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "testem": "^2.14.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}

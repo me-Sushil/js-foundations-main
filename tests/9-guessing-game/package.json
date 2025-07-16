@@ -1,0 +1,22 @@
+{
+  "name": "guessing-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/guessing-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/guessing-game/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/guessing-game#readme",
+  "devDependencies": {
+    "testem": "^2.14.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "foundations-final-checkpoint",
+  "version": "1.0.0",
+  "description": "testing functional and object-oriented javascript",
+  "scripts": {
+    "test": "testem",
+    "grade": "xvfb-run testem ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/foundations-final-checkpoint-V2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/foundations-final-checkpoint-V2/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/foundations-final-checkpoint-V2#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "testem": "^2.14.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}

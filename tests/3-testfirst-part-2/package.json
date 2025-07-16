@@ -1,0 +1,30 @@
+{
+  "name": "test-first-part-2",
+  "version": "1.0.0",
+  "description": "TestFirst JavaScript is a multi-part series that provides practice to intermediate to advanced javascript concepts. The majority of concepts introduced in TestFirst have mini lessons and practice exercises in the workshops on learndot. However, there will be new concepts introduced in TestFirst that you will need to learn on your own by reading documentation (it's important to begin learning how to read documentation efficiently!)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/FullstackTestFirst-Part2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/FullstackTestFirst-Part2/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/FullstackTestFirst-Part2#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "testem": "^1.18.5"
+  }
+}

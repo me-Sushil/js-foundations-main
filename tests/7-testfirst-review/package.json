@@ -1,0 +1,26 @@
+{
+  "name": "test-first-review",
+  "version": "1.0.0",
+  "description": "This repo contains additional Foundations practice problems.",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/TestFirst-Review-V2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/TestFirst-Review-V2/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/TestFirst-Review-V2#readme",
+  "devDependencies": {
+    "testem": "^2.14.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "vanishing-man",
+  "version": "1.0.0",
+  "description": "The VanishingMan project is designed just like the TestFirst test specs. After you fork and clone the repository, run the `testem` command and begin reviewing and tackling the specs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/Vanishing-Man.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/Vanishing-Man/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/Vanishing-Man#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "testem": "^2.14.0"
+  }
+}

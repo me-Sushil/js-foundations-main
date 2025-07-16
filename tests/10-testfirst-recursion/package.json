@@ -1,0 +1,22 @@
+{
+  "name": "test-first-recursion",
+  "version": "1.0.0",
+  "description": "<hr>",
+  "main": "recursion.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackAcademy/TestFirst-recursion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackAcademy/TestFirst-recursion/issues"
+  },
+  "homepage": "https://github.com/FullstackAcademy/TestFirst-recursion#readme",
+  "devDependencies": {
+    "testem": "^2.14.0"
+  }
+}

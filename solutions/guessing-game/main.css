@@ -1,0 +1,66 @@
+/* Write your CSS code in this file */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: inline;
+}
+
+/* For the div that contains our full application/game */
+#app {
+  width: 60%;
+  margin: 50px auto;
+  background-color: rgba(256, 256, 256, 0.5)
+}
+
+/* For the div that contains our input element and button element */
+#input-parent {
+  width: 160px;
+  margin: 5% auto 50px;
+  position: relative;
+}
+
+/* For the input element */
+#player-input {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  font-size: 60px;
+}
+
+/* For the button that says 'Go!' */
+#submit {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+}
+
+/* For the last div in the project, that says who made the game */
+#footer {
+  width: 100%;
+  border-top: solid 2px black;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Adding the class 'center' will center the text inside the div */
+.center {
+  text-align: center;
+}
+
+/* Add the 'guess' class to each list element (li element) */
+.guess {
+  display: inline;
+  font-size: 60px;
+  border: 1px solid black;
+  padding: 0 25px;
+  border-radius: 10%;
+  background-color: white;
+}

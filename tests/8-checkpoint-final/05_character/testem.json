@@ -1,0 +1,18 @@
+{
+  "framework": "jasmine2",
+  "src_files": [
+    "**/*.js"
+  ],
+  "src_files_ignore": [
+    "node_modules/**/*"
+  ],
+  "launch_in_ci" : [
+    "Chrome"
+  ],
+  "browser_args": {
+    "Chrome": [
+      "--remote-debugger-port=9222",
+      "--no-sandbox"
+    ]
+  }
+}
