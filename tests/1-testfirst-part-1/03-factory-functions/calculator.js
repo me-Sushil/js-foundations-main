@@ -16,3 +16,12 @@ function createCalculator() {
     }
   };
 };
+
+const addSquareMethod =(arr)=>{
+return arr.map((element)=>{
+  element.square = function(){
+    return this.total * this.total;
+  }
+  return element;
+  });
+};
