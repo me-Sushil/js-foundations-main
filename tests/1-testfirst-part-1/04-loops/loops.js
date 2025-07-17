@@ -14,3 +14,16 @@ const sum =(arr)=>{
     }
    return sum;
 }
+
+
+const join=(arr, delimiter)=>{
+    let finalStr = '';
+   for(let i=0; i<arr.length; i++){
+    let element = arr[i];
+    finalStr+=element;
+    if(arr.length-1 > i && typeof delimiter !== 'undefined'){
+        finalStr += delimiter;
+    }
+   } 
+   return finalStr;  
+}
