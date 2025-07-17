@@ -10,3 +10,8 @@ function findObjPropsHasOwn(obj) {
 
   return result.join(', ');
 }
+
+const findObjKeys =(obj)=>{
+    let objArr = Object.keys(obj);
+    return objArr.join(', ');
+};
