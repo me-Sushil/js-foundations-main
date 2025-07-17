@@ -16,14 +16,30 @@ const sum =(arr)=>{
 }
 
 
-const join=(arr, delimiter)=>{
+const join=(inputArr, delimiter)=>{
     let finalStr = '';
-   for(let i=0; i<arr.length; i++){
-    let element = arr[i];
+   for(let i=0; i<inputArr.length; i++){
+    let element = inputArr[i];
     finalStr+=element;
-    if(arr.length-1 > i && typeof delimiter !== 'undefined'){
+    if(inputArr.length-1 > i && typeof delimiter !== 'undefined'){
         finalStr += delimiter;
     }
    } 
    return finalStr;  
+}
+
+const gridGenerator =(num)=>{
+    let bord = "";
+    for(let i=0; i<num; i++){
+
+        for(let j=0; j<num; j++){
+            if((i+j)%2 === 0){
+                bord += "#";
+            }else{
+                bord += " ";
+            }
+        }
+        bord += "\n";
+    }
+    return bord;
 }
