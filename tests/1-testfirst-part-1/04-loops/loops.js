@@ -43,3 +43,14 @@ const gridGenerator =(num)=>{
     }
     return bord;
 }
+
+
+const paramify =obj=>{
+    let  params = [];
+    for(let prop in obj){
+        if(obj.hasOwnProperty(prop)){
+             params.push(`${prop}=${obj[prop]}`);
+        }
+    }
+    return join(params.sort(), '&');
+}
