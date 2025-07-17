@@ -25,3 +25,25 @@ return arr.map((element)=>{
   return element;
   });
 };
+
+const humanCalcPrototype={
+  add(num){
+    this.total +=  num;
+  },
+   subtract(num) {
+      this.total -= num;
+    },
+    value(){
+        return this.total;
+    },
+    clear(){
+        this.total = -10;
+    }
+
+}
+const createHumanCalculator =()=>{
+  let humanCal = Object.create(humanCalcPrototype);
+  humanCal.total = -10;
+  return humanCal;
+};
+
