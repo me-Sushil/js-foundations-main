@@ -54,3 +54,13 @@ const paramify =obj=>{
     }
     return join(params.sort(), '&');
 }
+
+
+const paramifyObjectKeys =(obj)=>{
+    return Object.keys(obj)
+    .map((key)=>{
+        return `${key}=${obj[key]}`;
+    })
+    .sort()
+    .join('&');
+};
