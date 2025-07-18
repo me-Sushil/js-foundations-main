@@ -7,13 +7,26 @@ function forEach(arr) {
 }
 
 function map(arr, doubler) {
-    let newArr = [];
-    for(let i=0; i<arr.length; i++){
-        let element = arr[i];
-        newArr.push(doubler(element));
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let element = arr[i];
+    newArr.push(doubler(element));
+  }
+  return newArr;
+}
+function doubler(num) {
+  return num * 2;
+}
+
+function filter(arr, fnArg) {
+  let trueNewArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let element = arr[i];
+    if (fnArg(element) === true) {
+      trueNewArr.push(element);
     }
-     return newArr;
+  }
+  return trueNewArr;
 }
- function doubler (num){
-    return num *2;
-}
+
+
