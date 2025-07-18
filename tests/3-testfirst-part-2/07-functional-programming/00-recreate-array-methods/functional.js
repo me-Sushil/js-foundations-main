@@ -38,3 +38,11 @@ function includes(collection, value) {
   }
    return false;
 }
+
+
+const countWords =(val, word)=>{
+  let totalCount = 0;
+  let arr = word.split(' ');
+  totalCount = val + arr.length;
+  return totalCount;
+}
