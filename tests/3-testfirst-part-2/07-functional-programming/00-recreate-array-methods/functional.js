@@ -61,3 +61,16 @@ let cocc = reduce(["sushsu sus susu", "iu ushd sud"], 0, combine);
 console.log(cocc);
 
 
+
+function reduce(array, callback, initial) {
+  let result = initial;
+  for (let i = 0; i < array.length; i++) {
+    result = callback(result, array[i], i, array);
+  }
+  return result;
+}
+function every(collection, predicate) {
+  return reduce(collection, (acc, curr) => {
+    return acc && !!predicate(curr); // stop at first false
+  }, true);
+}
