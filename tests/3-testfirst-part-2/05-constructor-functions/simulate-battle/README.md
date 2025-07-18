@@ -1,6 +1,6 @@
 ### Simulate Battle
 
-#### 1) Pokemon Constructor Function
+#### 1 Pokemon Constructor Function
 
 In order to have Pokemon battle one another, first you need a way to create the Pokemon! **Create the constructor function `Pokemon` that creates a `Pokemon`
 with the following properties**:
