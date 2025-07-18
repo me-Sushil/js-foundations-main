@@ -30,19 +30,34 @@ function filter(arr, fnArg) {
 }
 
 function includes(collection, value) {
-    let arr = Object.values(collection);
-  for(let i = 0; i < arr.length; i++) {
+  let arr = Object.values(collection);
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === value) {
       return true;
     }
   }
-   return false;
+  return false;
 }
 
-
-const countWords =(val, word)=>{
+const countWords = (val, word) => {
   let totalCount = 0;
-  let arr = word.split(' ');
+  let arr = word.split(" ");
   totalCount = val + arr.length;
   return totalCount;
+};
+
+function reduce(array, currentValue, combineFn) {
+  let totalValue = 0;
+  for (i = 0; i < array.length; i++) {
+    totalValue += combineFn(currentValue, array[i]);
+  }
+  return totalValue;
 }
+
+function combine(accumulator, line) {
+  return (accumulator += line.split(" ").length);
+}
+let cocc = reduce(["sushsu sus susu", "iu ushd sud"], 0, combine);
+console.log(cocc);
+
+
