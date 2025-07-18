@@ -29,4 +29,12 @@ function filter(arr, fnArg) {
   return trueNewArr;
 }
 
-
+function includes(collection, value) {
+    let arr = Object.values(collection);
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] === value) {
+      return true;
+    }
+  }
+   return false;
+}
