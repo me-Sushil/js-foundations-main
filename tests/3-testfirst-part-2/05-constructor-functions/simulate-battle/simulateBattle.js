@@ -17,3 +17,31 @@ function Pokemon(name, health, attackBonus){
    };
 
 //    let pokemon = new Pokemon();
+
+
+
+// class Pokemon {
+//   constructor(name, health, attackBonus) {
+//     this.name = name;
+//     this.health = health;
+//     this.attackBonus = attackBonus;
+//   }
+
+//   biteAttack() {
+//     return this.attackBonus + 2;
+//   }
+// }
+
+function simulateBattle(p1, p2, firstAttackerName) {
+  let attacker = p1.name === firstAttackerName ? p1 : p2;
+  let defender = p1.name === firstAttackerName ? p2 : p1;
+
+  while (true) {
+    defender.health -= attacker.biteAttack();
+    if (defender.health <= 0) {
+      return `${attacker.name} Wins!`;
+    }
+
+    [attacker, defender] = [defender, attacker];
+  }
+}
