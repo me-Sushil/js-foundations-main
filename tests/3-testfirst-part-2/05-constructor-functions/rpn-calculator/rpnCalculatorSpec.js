@@ -123,7 +123,8 @@ describe('Calculator using reverse polish notation', () => {
 
   /*
     This unit test uses the `instanceof` operator. `instanceof` checks if an object has
-    prototype property (.prototype) of a constructor.  Here is a link to the documentation
+    prototype property (./
+    prototype) of a constructor.  Here is a link to the documentation
     for `instanceof`: https://mzl.la/1dqYtqW
   */
 
