@@ -26,3 +26,7 @@ function swapCase(string) {
     })
     .join(" ");
 }
+
+const extensionSearch=(ext, files)=>{
+    return files.filter(file=>file.endsWith(`.${ext}`));
+}
