@@ -14,6 +14,7 @@ function capitalize(word) {
 }
 
 function swapCase(string) {
+    //string.split(" ").map().join(" ")
   return string
     .split(" ")
     .map((word, index) => {
