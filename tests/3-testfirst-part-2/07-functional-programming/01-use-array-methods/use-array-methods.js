@@ -79,3 +79,14 @@ const filterReduce = (array, callback) => {
     return acc;
   }, []);
 };
+
+
+function inYourBudget(value, array) {
+    return array
+    .filter(function(obj){
+        return obj.price <= value;
+    })
+    .map(function(obj){
+        return obj.item;
+    })
+}
