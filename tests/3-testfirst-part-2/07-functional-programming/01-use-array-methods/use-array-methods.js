@@ -3,18 +3,17 @@ function indexAndValue(arr) {
   return arr.map((value, index) => {
     return {
       index: index,
-      value: value
+      value: value,
     };
   });
 }
-
 
 function capitalize(word) {
   return word.toUpperCase();
 }
 
 function swapCase(string) {
-    //string.split(" ").map().join(" ")
+  //string.split(" ").map().join(" ")
   return string
     .split(" ")
     .map((word, index) => {
@@ -27,11 +26,9 @@ function swapCase(string) {
     .join(" ");
 }
 
-const extensionSearch=(ext, files)=>{
-    return files.filter(file=>file.endsWith(`.${ext}`));
-}
-
-
+const extensionSearch = (ext, files) => {
+  return files.filter((file) => file.endsWith(`.${ext}`));
+};
 
 function getPopulation(countriesArray, selectedCountryNames) {
   return countriesArray.reduce((total, country) => {
@@ -45,7 +42,6 @@ function getPopulation(countriesArray, selectedCountryNames) {
   }, 0);
 }
 
-
 function keyifyArrayOfObjects(key, array) {
   return array.reduce((result, obj) => {
     result[obj[key]] = obj;
@@ -58,3 +54,20 @@ function powerLevelAverage(superheroes) {
   return Math.round(total / superheroes.length);
 }
 
+function mapReduce(array, callback) {
+  //let newarray = [];
+  return array.reduce((acc, currentValue) => {
+    acc.push(callback(currentValue));
+    return acc;
+  },[]);
+}
+function callback(currentValue){
+    if(typeof currentValue === 'number'){
+        return currentValue*2;
+    }else if(typeof currentValue === 'string'){
+        return currentValue.toUpperCase();
+    }else if(typeof currentValue === 'boolean'){
+         return !currentValue;
+    }
+
+}
