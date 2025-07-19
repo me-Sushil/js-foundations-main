@@ -53,8 +53,8 @@ function keyifyArrayOfObjects(key, array) {
   }, {});
 }
 
-// function powerLevelAverage(superheroes) {
-//   const total = superheroes.reduce((sum, hero) => sum + hero.powerLevel, 0);
-//   return Math.round(total / superheroes.length);
-// }
+function powerLevelAverage(superheroes) {
+  const total = superheroes.reduce((sum, hero) => sum + hero.powerLevel, 0);
+  return Math.round(total / superheroes.length);
+}
 
