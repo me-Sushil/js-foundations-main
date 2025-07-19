@@ -103,3 +103,13 @@ function separateAndReturnNames(superheroes, nameType, maxLength) {
     .map(hero => hero[nameType])
     .filter(name => name.length <= maxLength);
 }
+
+function priorityTodoDuration(todoList){
+   return todoList
+   .filter(function(high){
+    return high.priority === 'high'; 
+   })
+   .reduce(function(total, highpro){
+    return total+highpro.duration;
+   },0)
+}
