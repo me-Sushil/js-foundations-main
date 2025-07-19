@@ -59,15 +59,23 @@ function mapReduce(array, callback) {
   return array.reduce((acc, currentValue) => {
     acc.push(callback(currentValue));
     return acc;
-  },[]);
+  }, []);
 }
-function callback(currentValue){
-    if(typeof currentValue === 'number'){
-        return currentValue*2;
-    }else if(typeof currentValue === 'string'){
-        return currentValue.toUpperCase();
-    }else if(typeof currentValue === 'boolean'){
-         return !currentValue;
-    }
+function callback(currentValue) {
+  if (typeof currentValue === "number") {
+    return currentValue * 2;
+  } else if (typeof currentValue === "string") {
+    return currentValue.toUpperCase();
+  } else if (typeof currentValue === "boolean") {
+    return !currentValue;
+  }
+}
 
-}
+const filterReduce = (array, callback) => {
+  return array.reduce((acc, currentValue) => {
+    if (callback(currentValue)) {
+      acc.push(currentValue);
+    }
+    return acc;
+  }, []);
+};
