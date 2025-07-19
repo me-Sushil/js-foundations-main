@@ -90,3 +90,16 @@ function inYourBudget(value, array) {
         return obj.item;
     })
 }
+
+function separateAndReturnNames(superheroes, nameType, maxLength) {
+  superheroes.map(hero => {
+    const [firstName, lastName] = hero.name.split(' ');
+    hero.firstName = firstName;
+    hero.lastName = lastName;
+    return hero;
+  });
+
+  return superheroes
+    .map(hero => hero[nameType])
+    .filter(name => name.length <= maxLength);
+}
