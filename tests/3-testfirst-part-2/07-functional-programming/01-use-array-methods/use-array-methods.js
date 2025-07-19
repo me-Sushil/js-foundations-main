@@ -30,3 +30,17 @@ function swapCase(string) {
 const extensionSearch=(ext, files)=>{
     return files.filter(file=>file.endsWith(`.${ext}`));
 }
+
+
+
+function getPopulation(countriesArray, selectedCountryNames) {
+  return countriesArray.reduce((total, country) => {
+    if (
+      selectedCountryNames.length === 0 ||
+      selectedCountryNames.includes(country.name)
+    ) {
+      return total + country.population;
+    }
+    return total;
+  }, 0);
+}
