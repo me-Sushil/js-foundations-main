@@ -7,3 +7,21 @@ function indexAndValue(arr) {
     };
   });
 }
+
+
+function capitalize(word) {
+  return word.toUpperCase();
+}
+
+function swapCase(string) {
+  return string
+    .split(" ")
+    .map((word, index) => {
+      if (index % 2 === 0) {
+        return capitalize(word); // Use separate capitalize function
+      } else {
+        return word;
+      }
+    })
+    .join(" ");
+}
