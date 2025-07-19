@@ -17,3 +17,9 @@ function yourFunctionRunner(){
   return str;
 }
 
+
+const makeAdder = (num)=>{
+  return function(numm){
+    return num+numm;
+  }
+}
