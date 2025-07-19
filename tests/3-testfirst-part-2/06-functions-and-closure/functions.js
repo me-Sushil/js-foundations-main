@@ -30,3 +30,21 @@ const once = (sayHello) => {
     return "the function has already been called...";
   };
 };
+
+const createObjectWithClosures = () => {
+  let value = 0;
+  return {
+    oneIncrementer: function () {
+      value += 1;
+    },
+    tensIncrementer: function () {
+      value += 10;
+    },
+    getValue: function () {
+      return value;
+    },
+    setValue: function (newValue) {
+      return (value = newValue);
+    },
+  };
+};
