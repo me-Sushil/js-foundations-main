@@ -48,3 +48,16 @@ const createObjectWithClosures = () => {
     },
   };
 };
+
+
+function dontSpillTheBeans(initialSecret) {
+  let secret = initialSecret; // 👈 Private variable (closed over)
+  return {
+    getSecret: function () {
+      return secret;
+    },
+    setSecret: function (newSecret) {
+      secret = newSecret;
+    }
+  };
+}
