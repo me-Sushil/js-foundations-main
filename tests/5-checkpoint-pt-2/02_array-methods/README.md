@@ -15,7 +15,7 @@ All these functions were based on the methods built into the language (on the `A
 
 With the first three methods you need to create, you are responsible for passing the callback function to `map`, `reduce`, and `filter`.
 
-- `filterEvensDoubleAndSum` - Using the `filter`, `map`, and `reduce` methods (method chain :) ):
+- `filterEvensDoubleAndSum` - Using the `filter`, `map`, and `reduce` methods (method chain :) :
   - filter all the values in the initial array so the array returned from filter only contains even numbers
   - map over the array returned from filter and double the values
   - reduce the array returned from map and calculate the sum
