@@ -5,8 +5,8 @@ class Mammal {
     this.name = name;
     this.offspring = [];
   }
-  sayHello() {
-    return `My name is ${this.name}, I'm a Mammal`;
+   sayHello() {
+    return `My name is ${this.name}, I'm a ${this.constructor.name}`;
   }
 
   haveBaby() {
@@ -15,3 +15,19 @@ class Mammal {
     return baby;
   }
 }
+// class child extends parent
+class Cat extends Mammal{
+    constructor(name, color){
+    super(name);
+    this.color = color;
+    }
+    meow(){
+        return `meow`;
+    }
+    haveBaby(color) {
+    const baby = new Cat(`Baby ${this.name}`, color);
+    this.offspring.push(baby);
+    return baby;
+  }
+}
+
