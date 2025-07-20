@@ -12,3 +12,14 @@ const sumWithReduce = (array, startingValue = 0) => {
   return array.reduce((acc, currentVal) => acc + currentVal, startingValue);
 };
 
+
+const filterEvensDoubleAndSum =(array)=>{
+    return array
+    .filter((evenArr)=> evenArr % 2 === 0)
+    .map((doubleElement)=>{
+        return doubleElement*2;
+    })
+    .reduce((acc, currentVal)=>{
+        return acc + currentVal;
+    },0)
+}
