@@ -8,4 +8,7 @@ const useFilter = (string) => {
 };
 
 
+const sumWithReduce = (array, startingValue = 0) => {
+  return array.reduce((acc, currentVal) => acc + currentVal, startingValue);
+};
 
