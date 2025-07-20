@@ -31,3 +31,18 @@ class Cat extends Mammal{
   }
 }
 
+class Dog extends Mammal{
+    constructor(name, breed){
+        super(name);
+        this.breed = breed;
+    }
+    bark(){
+        return 'RUFF RUFF';
+    }
+    haveBaby(breed){
+        let beagle = new Dog(`Baby ${this.name}`, breed);
+        this.offspring.push(beagle);
+        return beagle;
+
+    }
+}
