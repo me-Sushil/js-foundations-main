@@ -15,11 +15,11 @@ function difference(arrayA, arrayB) {
 }
 
 
-// function symmetricDiff(arrayA, arrayB){
-//     let syDif =[];
-//     let diffA =  difference(arrayA, arrayB);
-//     let diffB = arrayB.filter((element)=>!arrayA.includes(element));
-//     diffA.map((element)=>syDif.push(element));
-//     diffB.map((element)=> syDif.push(element));
-//     return syDif;
-// }
+function symmetricDiff(arrayA, arrayB){
+    let syDif =[];
+    let diffA =  difference(arrayA, arrayB);
+    let diffB = arrayB.filter((element)=>!arrayA.includes(element));
+    diffA.map((element)=>syDif.push(element));
+    diffB.map((element)=> syDif.push(element));
+    return syDif;
+}
