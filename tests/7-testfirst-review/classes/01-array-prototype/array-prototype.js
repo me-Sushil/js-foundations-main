@@ -15,3 +15,14 @@ Array.prototype.fiilter = function (callback) {
   });
   return result;
 };
+
+
+
+Array.prototype.reeduce = function (callback, initialValue) {
+  let acc = initialValue;
+  this.forEach((curr, index) => {
+    acc = callback(acc, curr, index, this);
+  });
+  return acc;
+};
+
