@@ -1,7 +1,7 @@
 Array.prototype.maap = function(callback) {
   const result = [];
   this.forEach((element) => {
-    result.push(callback(element));//, index, array
+    result.push(callback(element));
   });
   return result;
 };
