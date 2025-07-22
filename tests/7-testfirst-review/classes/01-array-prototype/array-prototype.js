@@ -5,10 +5,7 @@ Array.prototype.maap = function(callback) {
   });
   return result;
 };
-const arr = [1, 2, 3];
-const newArr = arr.maap((val, i) => {
-  return val + 1;
-});
+
 
 
 
