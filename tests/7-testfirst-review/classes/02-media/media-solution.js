@@ -46,3 +46,10 @@ class Movie extends Media{
   }
 }
 
+class Book extends Media{
+  constructor(title, yearOfRelease, author, pages){
+    super(title, yearOfRelease);
+    this.author = author,
+    this.pages = pages
+  }
+}
