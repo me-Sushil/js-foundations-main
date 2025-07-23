@@ -36,3 +36,13 @@ class Album extends Media {
     this.tracks = tracks;
   }
 }
+
+
+class Movie extends Media{
+  constructor(title, yearOfRelease, director, runTime){
+    super(title, yearOfRelease);
+    this.director = director, 
+    this.runTime = runTime
+  }
+}
+
