@@ -28,3 +28,11 @@ class Media {
     
   }
 }
+
+class Album extends Media {
+  constructor(title, yearOfRelease, artist, tracks) {
+    super(title, yearOfRelease);
+    this.artist = artist;
+    this.tracks = tracks;
+  }
+}
