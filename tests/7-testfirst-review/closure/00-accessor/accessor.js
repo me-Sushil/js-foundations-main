@@ -6,6 +6,5 @@ function accessor(obj) {
     } else if(arguments.length === 2){
         obj[key] = value;
     }
-
   };
 }
