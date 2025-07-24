@@ -1,8 +1,6 @@
 class MyEventEmitter{
-    constructor(events){
-        this.events = {
-            
-        }
+    constructor(){
+        this.events = {}
     }
 
     addListener(eventName, callback){
@@ -12,7 +10,12 @@ class MyEventEmitter{
         this.events[eventName].push(callback);
 
     }
-    emit(){
-
+    emit(eventName, ...args){
+        let handler = this.events[eventName];
+        if(handler){
+            for(let func of handler){
+                func(...args);
+            }
+        }
     }
 }
