@@ -8,11 +8,14 @@ function alternate(fn){
         toggle = !toggle;
     }
 }
-function twice(callback){
-    let count = 0;
-    while(count < 2){
-        count++;
-        callback();
-    }
 
+function twice(fn) {
+  let count = 0;
+  return function() {
+    if (count < 2) {
+      count++;
+      return fn();
+    }
+    return 0;
+  };
 }
