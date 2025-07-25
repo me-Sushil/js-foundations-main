@@ -1,1 +1,6 @@
-/* eslint-disable no-unused-vars, no-extend-native */
+Array.prototype.doNotInclude = function(indexes) {
+  if (typeof indexes === 'number') {
+    indexes = [indexes];
+  }
+  return this.filter((_, i) => !indexes.includes(i));
+};
