@@ -71,12 +71,9 @@ describe('Letter Class', () => {
     const g = new Letter('G', 'Georgia', 99, 'upperCase');
     const beforeToLowerCaseInvocation = g.getCase();
     const characterBeforeToLowerCaseInvocation = g.drawCharacter();
-
     expect(beforeToLowerCaseInvocation).toBe('upperCase');
     expect(characterBeforeToLowerCaseInvocation).toBe('G');
-
     g.toLowerCase();
-
     expect(g.getCase()).toBe('lowerCase');
     expect(g.drawCharacter()).toBe('g');
   });
