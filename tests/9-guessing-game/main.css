@@ -1,1 +1,18 @@
 /* Write your CSS code in this file */
+body{
+    justify-items: center;
+    background-color:rgba(24, 24, 24, 0.6)
+}
+.mainDiv{
+    justify-items: center;
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+
+}
+
+.myGussingGame {
+  font-size: 52px;
+  font-weight: bold;
+
+}
